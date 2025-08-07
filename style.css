@@ -1,0 +1,99 @@
+body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f5f0;
+            color: #333;
+            overflow-x: hidden;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('bgphoto.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .menu-item {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-delay-1 {
+            animation: float 6s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+        
+        .floating-delay-2 {
+            animation: float 6s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .text-stroke {
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+        }
+        
+        #typewriter {
+            min-height: 120px;
+        }
+        
+        .perspective {
+            perspective: 1000px;
+        }
+        
+        .rotate-3d {
+            transform: rotateY(15deg) rotateX(-5deg);
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .gallery-item {
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+        
+        .reservation-form input, .reservation-form textarea {
+            transition: all 0.3s ease;
+        }
+        
+        .reservation-form input:focus, .reservation-form textarea:focus {
+            transform: scale(1.02);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .spinner {
+            animation: spin 8s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
